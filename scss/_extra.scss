@@ -1,0 +1,35 @@
+$primary-color: #2b2b2b;
+$second-color: #d87e18;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin ease {
+  transition: all 0.5s ease-in-out;  
+}
+@function s-t-c($color){
+  @if(lightness($color) > 40%){
+      @return #000;
+  }@else{
+    @return #fff;
+  }
+}
+
+@mixin meadia-md {
+   @media screen and (min-width: 768px) {
+      @content;
+   }
+}
+@mixin meadia-lg {
+   @media screen and (min-width: 1024px) {
+      @content;
+   }
+}
+@mixin meadia-xl {
+   @media screen and (min-width: 1600px) {
+      @content;
+   }
+}

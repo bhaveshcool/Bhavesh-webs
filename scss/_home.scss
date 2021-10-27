@@ -1,0 +1,17 @@
+.home{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: url(../images/bg.jpg) center top;
+    background-size:  cover;
+
+    &_name{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 1rem;
+    }
+}
+
